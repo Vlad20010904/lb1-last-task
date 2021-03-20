@@ -1,0 +1,10 @@
+Перевести из 10 системы исчисления в двоичную систему
+private static String toBin(int i){
+StringBuilder sb = new StringBuilder();
+while(i>0){
+sb.insert(0, i&1);
+i>>=1;
+}
+if(sb.length()==0) sv.append(“0”);
+return sb.toString();
+}
